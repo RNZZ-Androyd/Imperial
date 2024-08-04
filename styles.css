@@ -1,0 +1,155 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos Gerais */
+body {
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* Header */
+header {
+    background: #111;
+    padding: 20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between; /* Alinha logo e menu de navegação */
+}
+
+.logo img {
+    max-width: 150px; /* Ajuste a largura máxima da imagem */
+    height: auto;
+    border-radius: 10px;
+}
+
+nav {
+    display: flex;
+    flex: 1; /* Permite que o nav ocupe o espaço restante */
+    justify-content: center; /* Centraliza o menu de navegação horizontalmente */
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0 15px;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #333;
+    color: #00ff00; /* Verde Neon */
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+}
+
+.highlight {
+    color: #8A2BE2; /* Verde Escuro */
+    font-weight: bold;
+}
+
+/* Seções */
+section {
+    padding: 50px 0;
+    background-color: #222;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ff4500; /* Laranja Elétrico */
+    text-align: center;
+}
+
+.player, .team {
+    margin-bottom: 20px;
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.player h3, .team h3 {
+    color: #00ff00; /* Verde Neon */
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+input, textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px;
+    background: #00ff00;
+    border: none;
+    border-radius: 5px;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+}
+
+.social-media a {
+    margin: 0 10px;
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-content h1 {
+        font-size: 2em;
+    }
+}
